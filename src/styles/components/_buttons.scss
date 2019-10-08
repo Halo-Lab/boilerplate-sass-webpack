@@ -11,6 +11,10 @@
   border: none;
   outline: none;
   border-radius: 100px;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 10px;
+  }
 }
 
 .button_pink {
@@ -20,4 +24,9 @@
 .button--sm {
   width: 170px;
   height: 60px;
+
+  @include media-breakpoint-down(sm) {
+    width: 150px;
+    height: 45px;
+  }
 }

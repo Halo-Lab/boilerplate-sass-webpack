@@ -5,6 +5,14 @@
     justify-content: center;
     align-items: center;
 
+    @include media-breakpoint-up(xl) {
+      min-height: calc(90vh - 120px);
+    }
+
+    @include media-breakpoint-down(sm) {
+      min-height: 470px;
+    }
+
     img {
       position: absolute;
       top: 50%;
@@ -21,6 +29,7 @@
     text-align: center;
     color: $color-white;
     z-index: 1;
+    padding: 0 20px;
   }
 
   .slide-title {
@@ -28,6 +37,17 @@
     font-size: 45px;
     line-height: 1.33em;
     margin-bottom: 0.44em;
+    letter-spacing: 1px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 38px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 30px;
+      margin-bottom: 0.33em;
+      line-height: 1.35em;
+    }
   }
 
   .slide-description {
@@ -35,5 +55,11 @@
     font-size: 16px;
     line-height: 1.25em;
     margin-bottom: 4.06em;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 18px;
+      line-height: 1.11em;
+      margin-bottom: 1.67em;
+    }
   }
 }

@@ -5,6 +5,10 @@
   border-radius: 50%;
   background: rgba($color-white, 0.5);
 
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+
   &:after {
     content: '';
     background: url('/public/images/arrow.svg') no-repeat center;
@@ -47,4 +51,8 @@
 .swiper-container-horizontal > .swiper-pagination-bullets {
   font-size: 0;
   bottom: 30px;
+
+  @include media-breakpoint-down(sm) {
+    bottom: 20px;
+  }
 }

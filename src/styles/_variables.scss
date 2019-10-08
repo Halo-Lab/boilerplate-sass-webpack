@@ -1,6 +1,7 @@
 // colors
 
 $body-color: #000000;
+$color-black: #000000;
 $color-white: #ffffff;
 $color-dark-black: #030708;
 $color-pink: #e9098d;
@@ -10,3 +11,14 @@ $color-yellow: #f9d20b;
 // fonts
 
 $font-title: 'Paloseco';
+
+//grid breakpoints
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1280px,
+  xxl: 1920px
+);
