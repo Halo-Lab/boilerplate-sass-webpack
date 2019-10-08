@@ -24,10 +24,11 @@ body {
 
 a {
   text-decoration: none;
-  color: $body-color;
+  color: $color-dark-black;
 
   &:hover {
     text-decoration: none;
+    color: $color-dark-black;
   }
 }
 
