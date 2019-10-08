@@ -1,0 +1,50 @@
+.swiper-button-prev,
+.swiper-button-next {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba($color-white, 0.5);
+
+  &:after {
+    content: '';
+    background: url('/public/images/arrow.svg') no-repeat center;
+    background-size: contain;
+    width: 12px;
+    height: 18px;
+  }
+}
+
+.swiper-button-next {
+  right: 20px;
+
+  &:after {
+    transform: translate(2px);
+  }
+}
+
+.swiper-button-prev {
+  left: 20px;
+
+  &:after {
+    transform: scaleX(-1) translate(2px);
+  }
+}
+
+.swiper-pagination-bullet {
+  background: $color-light-blue;
+  opacity: 0.4;
+}
+
+.swiper-pagination-bullet-active {
+  background: $color-yellow;
+  opacity: 1;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 5px;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  font-size: 0;
+  bottom: 30px;
+}

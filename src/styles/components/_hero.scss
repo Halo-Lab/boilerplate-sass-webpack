@@ -1,0 +1,39 @@
+.section-hero {
+  .swiper-slide {
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .slide-content {
+    position: relative;
+    text-align: center;
+    color: $color-white;
+    z-index: 1;
+  }
+
+  .slide-title {
+    font-family: $font-title;
+    font-size: 45px;
+    line-height: 1.33em;
+    margin-bottom: 0.44em;
+  }
+
+  .slide-description {
+    font-family: 'AvenirBook', sans-serif;
+    font-size: 16px;
+    line-height: 1.25em;
+    margin-bottom: 4.06em;
+  }
+}

@@ -1,0 +1,23 @@
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: 'AvenirBlack', sans-serif;
+  color: $color-white;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  border-radius: 100px;
+}
+
+.button_pink {
+  background: $color-pink;
+}
+
+.button--sm {
+  width: 170px;
+  height: 60px;
+}

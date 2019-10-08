@@ -1,0 +1,130 @@
+.header {
+  display: flex;
+  justify-content: center;
+  background: $color-white;
+
+  .header__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0px 9px;
+
+    a,
+    p {
+      font-family: 'AvenirBook', sans-serif;
+      font-size: 12px;
+      line-height: 2.08em;
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .header__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px 28px;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 60px;
+  }
+
+  .header__top-info {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__top-info p {
+    margin-left: 50px;
+  }
+
+  .header__top-links {
+    display: flex;
+    align-items: center;
+  }
+
+  .account-link {
+    margin-left: 40px;
+  }
+
+  .menu__item {
+    font-family: 'AvenirHeavy', sans-serif;
+    font-size: 14px;
+    line-height: 1.78em;
+    text-transform: uppercase;
+  }
+
+  .menu > .menu__item + .menu__item {
+    margin-left: 40px;
+  }
+
+  .header__logo {
+    font-size: 0;
+    width: 100px;
+
+    a {
+      display: block;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .menu__item-dropdown {
+    a {
+      position: relative;
+      padding-right: 16px;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 6px;
+        height: 6px;
+        transform: rotate(45deg) translate(-80%, -60%);
+        top: 50%;
+        box-shadow: inset -2px 0 0 0 $color-dark-black, inset 0px -2px 0 0 $color-dark-black;
+      }
+    }
+  }
+
+  .search-field {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px 0 0 $color-dark-black;
+
+    input {
+      font-family: 'AvenirLight', sans-serif;
+      border: none;
+      outline: none;
+      width: 178px;
+      font-size: 14px;
+      line-height: 1.78em;
+
+      &::placeholder {
+        color: rgba(#030708, 0.7);
+      }
+    }
+
+    img {
+      padding: 0 5px;
+      margin-right: 8px;
+    }
+  }
+
+  .cart {
+    margin-left: 38px;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "headerInfoOrder": "Get a 1-hour free trial on your order",
+  "findAStoreLink": "Find a Store",
+  "myAccountLink": "My Account",
+  "menu": {
+    "menuItem1": {
+      "menuItemTitle": "products"
+    },
+    "menuItem2": {
+      "menuItemTitle": "buy by room"
+    },
+    "menuItem3": {
+      "menuItemTitle": "satranji project"
+    },
+    "menuItem4": {
+      "menuItemTitle": "inspiration"
+    }
+  },
+  "heroSlider": {
+    "slide1": {
+      "title": "Modern and convenience",
+      "description": "Retro furniture from ৳ 1,000",
+      "button": "shop now"
+    }
+  }
+}
