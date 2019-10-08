@@ -4,6 +4,7 @@
   height: 45px;
   border-radius: 50%;
   background: rgba($color-white, 0.5);
+  transition: background-color 0.3s;
 
   @include media-breakpoint-down(md) {
     display: none;
@@ -15,6 +16,17 @@
     background-size: contain;
     width: 12px;
     height: 18px;
+  }
+
+  &:hover {
+    @include media-breakpoint-up(lg) {
+      background: $color-blue;
+    }
+  }
+
+  &:active,
+  &:focus {
+    background: $color-dark-blue;
   }
 }
 

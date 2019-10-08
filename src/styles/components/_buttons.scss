@@ -11,14 +11,32 @@
   border: none;
   outline: none;
   border-radius: 100px;
+  transition: background-color 0.3s, box-shadow 0.3s;
 
   @include media-breakpoint-down(sm) {
     font-size: 10px;
+  }
+
+  &:hover {
+    color: $color-white;
   }
 }
 
 .button_pink {
   background: $color-pink;
+
+  &:hover {
+    @include media-breakpoint-up(lg) {
+      background: $color-lighter-pink;
+      box-shadow: 0px 11px 20px rgba(231, 15, 139, 0.21);
+    }
+  }
+
+  &:active,
+  &:focus {
+    background: $color-dark-pink;
+    box-shadow: none;
+  }
 }
 
 .button--sm {
