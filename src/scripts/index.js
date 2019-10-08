@@ -7,7 +7,7 @@ function updateContent() {
   let element;
   document.querySelectorAll('[data-translate]').forEach(item => {
     element = item;
-    element.innerText = i18next.t(item.getAttribute('data-translate'));
+    element.innerHTML += i18next.t(item.getAttribute('data-translate'));
   });
 }
 

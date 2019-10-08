@@ -1,5 +1,7 @@
+@import './bootstrap';
+@import '~bootstrap/scss/root';
+@import '~bootstrap/scss/reboot';
 @import './fonts';
-@import './variables.scss';
 @import './components/buttons';
 @import './components/slider';
 @import './components/header';
@@ -44,4 +46,5 @@ p {
 .container {
   width: 100%;
   max-width: 1160px;
+  padding: 0 60px;
 }
