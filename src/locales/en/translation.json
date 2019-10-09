@@ -22,5 +22,13 @@
       "description": "Retro furniture from ৳ 1,000",
       "button": "shop now"
     }
-  }
+  },
+  "newArrivalTitle": "New arrival",
+  "products": {
+    "BushwickGreenGreyBanco": "Bushwick Green Grey Banco",
+    "BushwickBlueChair": "Bushwick Blue Chair",
+    "BushwickDarkGreySofa": "Bushwick Dark Grey Sofa",
+    "BushwickCenterTable": "Bushwick Center Table"
+  },
+  "viewAllItemsButton": "view all items"
 }

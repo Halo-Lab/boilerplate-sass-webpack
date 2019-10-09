@@ -39,8 +39,35 @@
   }
 }
 
+.button_blue {
+  background: $color-dark-blue;
+
+  &:hover {
+    @include media-breakpoint-up(lg) {
+      background: $color-medium-blue;
+      box-shadow: 0px 12px 54px rgba(64, 194, 238, 0.3);
+    }
+  }
+
+  &:active,
+  &:focus {
+    background: $color-extra-dark-blue;
+    box-shadow: none;
+  }
+}
+
 .button--sm {
   width: 170px;
+  height: 60px;
+
+  @include media-breakpoint-down(sm) {
+    width: 150px;
+    height: 45px;
+  }
+}
+
+.button--md {
+  width: 200px;
   height: 60px;
 
   @include media-breakpoint-down(sm) {

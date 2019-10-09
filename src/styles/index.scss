@@ -6,6 +6,7 @@
 @import './components/slider';
 @import './components/header';
 @import './components/hero';
+@import './components/section-arrival';
 
 html {
   height: 100%;
@@ -19,7 +20,7 @@ body {
 }
 
 .wrapper {
-  height: 100%;
+  overflow: hidden;
 }
 
 a {
@@ -50,7 +51,7 @@ p {
 
 .container {
   width: 100%;
-  max-width: 1160px;
+  max-width: 1280px;
   padding: 0 60px;
 
   @include media-breakpoint-down(sm) {
@@ -59,5 +60,24 @@ p {
 
   @include media-breakpoint-down(xs) {
     padding: 0 20px;
+  }
+}
+
+.section-title {
+  font-family: $font-title;
+  font-size: 36px;
+  line-height: 1.11em;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 1.39em;
+
+  @include media-breakpoint-down(md) {
+    font-size: 30px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 25px;
+    line-height: 1.2em;
+    margin-bottom: 0.8em;
   }
 }

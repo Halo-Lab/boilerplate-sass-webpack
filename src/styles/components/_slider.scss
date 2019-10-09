@@ -5,17 +5,22 @@
   border-radius: 50%;
   background: rgba($color-white, 0.5);
   transition: background-color 0.3s;
+  color: $color-white;
 
   @include media-breakpoint-down(md) {
     display: none;
   }
 
+  @include media-breakpoint-down(sm) {
+    width: 40px;
+    height: 40px;
+  }
+
   &:after {
     content: '';
-    background: url('/public/images/arrow.svg') no-repeat center;
-    background-size: contain;
-    width: 12px;
-    height: 18px;
+    display: block;
+    width: 13px;
+    height: 13px;
   }
 
   &:hover {
@@ -34,7 +39,8 @@
   right: 20px;
 
   &:after {
-    transform: translate(2px);
+    box-shadow: inset -3px 0 0 0 currentColor, inset 0 -3px 0 0 currentColor;
+    transform: rotate(-45deg) translate(-1px, -1px);
   }
 }
 
@@ -42,7 +48,8 @@
   left: 20px;
 
   &:after {
-    transform: scaleX(-1) translate(2px);
+    box-shadow: inset -3px 0 0 0 currentColor, inset 0 -3px 0 0 currentColor;
+    transform: rotate(135deg) translate(-1px, -1px);
   }
 }
 

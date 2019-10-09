@@ -1,7 +1,7 @@
 import '../styles/index.scss';
 import i18next from 'i18next';
 import enContent from '../locales/en/translation.json';
-import initHeroSlider from './components/slider';
+import { initHeroSlider, initNewArrivalSlider } from './components/slider';
 
 function updateContent() {
   let element;
@@ -25,3 +25,4 @@ i18next
   });
 
 initHeroSlider();
+initNewArrivalSlider();
