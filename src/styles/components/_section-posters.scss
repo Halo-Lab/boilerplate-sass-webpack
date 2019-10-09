@@ -1,0 +1,60 @@
+.section-posters {
+  margin-top: 50px;
+
+  .posters-slider-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 60px;
+    margin-left: -60px;
+    margin-right: -60px;
+    padding-left: 60px;
+  }
+
+  .posters-slider {
+    position: static;
+    overflow: visible;
+  }
+
+  .poster__image {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: auto;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .poster {
+    position: relative;
+  }
+
+  .poster__body {
+    position: absolute;
+    right: 40px;
+    bottom: -60px;
+    padding: 40px;
+    background: $color-pink;
+    color: $color-white;
+    min-width: 330px;
+  }
+
+  .poster__title {
+    font-family: $font-title;
+    font-size: 30px;
+    line-height: 1.4em;
+    letter-spacing: 1px;
+    margin-bottom: 65px;
+  }
+
+  .posters-slider-pagination {
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+  }
+}

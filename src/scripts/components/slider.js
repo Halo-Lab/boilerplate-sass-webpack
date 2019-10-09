@@ -61,7 +61,6 @@ const initShopByRoomSlider = () => {
         allowTouchMove: false
       }
     },
-
     navigation: {
       nextEl: '.arrival-slider .swiper-button-next',
       prevEl: '.arrival-slider .swiper-button-prev'
@@ -69,4 +68,19 @@ const initShopByRoomSlider = () => {
   });
 };
 
-export { initHeroSlider, initNewArrivalSlider, initShopByRoomSlider };
+const initPostersSlider = () => {
+  return new Swiper('.posters-slider', {
+    loop: false,
+    slidesPerView: 1.09,
+    spaceBetween: 0,
+    pagination: {
+      el: '.posters-slider-pagination'
+    },
+    navigation: {
+      nextEl: '.posters-slider .swiper-button-next',
+      prevEl: '.posters-slider .swiper-button-prev'
+    }
+  });
+};
+
+export { initHeroSlider, initNewArrivalSlider, initShopByRoomSlider, initPostersSlider };

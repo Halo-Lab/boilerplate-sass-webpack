@@ -36,5 +36,11 @@
     "livingRoom": "Living room",
     "dinningRoom": "Dinning room"
   },
-  "shopByRoomTitle": "Shop by room"
+  "shopByRoomTitle": "Shop by room",
+  "banners": [
+    "A fusion <br />of form <br />and function",
+    "A fusion of form and function",
+    "A fusion of form and function"
+  ],
+  "bannerLink": "View all"
 }
