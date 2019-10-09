@@ -25,10 +25,16 @@
   },
   "newArrivalTitle": "New arrival",
   "products": {
-    "BushwickGreenGreyBanco": "Bushwick Green Grey Banco",
-    "BushwickBlueChair": "Bushwick Blue Chair",
-    "BushwickDarkGreySofa": "Bushwick Dark Grey Sofa",
-    "BushwickCenterTable": "Bushwick Center Table"
+    "bushwickGreenGreyBanco": "Bushwick Green Grey Banco",
+    "bushwickBlueChair": "Bushwick Blue Chair",
+    "bushwickDarkGreySofa": "Bushwick Dark Grey Sofa",
+    "bushwickCenterTable": "Bushwick Center Table"
   },
-  "viewAllItemsButton": "view all items"
+  "viewAllItemsButton": "view all items",
+  "categories": {
+    "bedroom": "Bedroom",
+    "livingRoom": "Living room",
+    "dinningRoom": "Dinning room"
+  },
+  "shopByRoomTitle": "Shop by room"
 }

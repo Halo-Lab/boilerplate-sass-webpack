@@ -1,4 +1,5 @@
 @import './bootstrap';
+@import './mixins/mixins';
 @import '~bootstrap/scss/root';
 @import '~bootstrap/scss/reboot';
 @import './fonts';
@@ -7,6 +8,7 @@
 @import './components/header';
 @import './components/hero';
 @import './components/section-arrival';
+@import './components/section-shop-by-room';
 
 html {
   height: 100%;
@@ -78,6 +80,6 @@ p {
   @include media-breakpoint-down(sm) {
     font-size: 25px;
     line-height: 1.2em;
-    margin-bottom: 0.8em;
+    margin-bottom: 30px;
   }
 }

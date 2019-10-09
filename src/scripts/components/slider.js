@@ -43,4 +43,30 @@ const initNewArrivalSlider = () => {
   });
 };
 
-export { initHeroSlider, initNewArrivalSlider };
+const initShopByRoomSlider = () => {
+  return new Swiper('.shop-by-room-slider', {
+    loop: false,
+    slidesPerView: 3,
+    spaceBetween: 0,
+    breakpoints: {
+      320: {
+        slidesPerView: 1.25
+      },
+      576: {
+        slidesPerView: 2.25,
+        allowTouchMove: true
+      },
+      768: {
+        slidesPerView: 3,
+        allowTouchMove: false
+      }
+    },
+
+    navigation: {
+      nextEl: '.arrival-slider .swiper-button-next',
+      prevEl: '.arrival-slider .swiper-button-prev'
+    }
+  });
+};
+
+export { initHeroSlider, initNewArrivalSlider, initShopByRoomSlider };

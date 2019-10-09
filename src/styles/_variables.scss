@@ -4,6 +4,7 @@ $color-black: #000000;
 $color-white: #ffffff;
 $color-dark-black: #030708;
 $body-color: $color-dark-black;
+$color-light-pink: #f2a8c9;
 $color-pink: #e9098d;
 $color-lighter-pink: #f60e97;
 $color-medium-pink: #e70f8b;
@@ -14,10 +15,13 @@ $color-medium-blue: #4ecaf3;
 $color-dark-blue: #3bc4f2;
 $color-extra-dark-blue: #0d83a1;
 $color-yellow: #f9d20b;
+$color-yellow-second: #fbd10f;
+$color-light-yellow: #f9ef98;
+$color-dark-yellow: #cdaa2c;
 
 // fonts
 
-$font-title: 'Paloseco';
+$font-title: 'Paloseco', sans-serif;
 
 //grid breakpoints
 
