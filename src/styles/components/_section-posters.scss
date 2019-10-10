@@ -131,6 +131,12 @@
     @include media-breakpoint-up(md) {
       display: flex;
     }
+
+    &:hover {
+      @include media-breakpoint-up(lg) {
+        background: rgba($color-dark-black, 0.45);
+      }
+    }
   }
 
   .swiper-button-next {
