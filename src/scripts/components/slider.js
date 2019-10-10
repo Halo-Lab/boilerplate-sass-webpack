@@ -18,9 +18,6 @@ const initHeroSlider = () => {
 
 const initNewArrivalSlider = () => {
   return new Swiper('.arrival-slider', {
-    loop: true,
-    slidesPerView: 4,
-    spaceBetween: 40,
     breakpoints: {
       320: {
         spaceBetween: 20,
@@ -71,7 +68,6 @@ const initShopByRoomSlider = () => {
 const initPostersSlider = () => {
   return new Swiper('.posters-slider', {
     loop: false,
-    slidesPerView: 1.09,
     spaceBetween: 0,
     pagination: {
       el: '.posters-slider-pagination'
@@ -79,6 +75,14 @@ const initPostersSlider = () => {
     navigation: {
       nextEl: '.posters-slider .swiper-button-next',
       prevEl: '.posters-slider .swiper-button-prev'
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1.06
+      },
+      576: {
+        slidesPerView: 1
+      }
     }
   });
 };
