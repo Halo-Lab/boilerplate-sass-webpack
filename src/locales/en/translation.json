@@ -42,5 +42,20 @@
     "A fusion of form and function",
     "A fusion of form and function"
   ],
-  "bannerLink": "View all"
+  "bannerLink": "View all",
+  "sectionUsefulTitle": "Let us help you!",
+  "usefulInfo": {
+    "delivery": {
+      "title": "Delivery",
+      "description": "At the right time, in the right place"
+    },
+    "services": {
+      "title": "Services",
+      "description": "Our masters will fix any of your issues"
+    },
+    "design": {
+      "title": "Design Studio",
+      "description": "Trust to our specialist in your questions"
+    }
+  }
 }
