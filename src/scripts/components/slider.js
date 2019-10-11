@@ -18,6 +18,7 @@ const initHeroSlider = () => {
 
 const initNewArrivalSlider = () => {
   return new Swiper('.arrival-slider', {
+    loop: false,
     breakpoints: {
       320: {
         spaceBetween: 20,
@@ -59,8 +60,8 @@ const initShopByRoomSlider = () => {
       }
     },
     navigation: {
-      nextEl: '.arrival-slider .swiper-button-next',
-      prevEl: '.arrival-slider .swiper-button-prev'
+      nextEl: '.shop-by-room-slider .swiper-button-next',
+      prevEl: '.shop-by-room-slider .swiper-button-prev'
     }
   });
 };
