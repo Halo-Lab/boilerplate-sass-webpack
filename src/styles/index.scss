@@ -6,6 +6,8 @@
 @import './components/buttons';
 @import './components/slider';
 @import './components/header';
+@import './components/footer';
+@import './components/language';
 @import './components/hero';
 @import './components/section-arrival';
 @import './components/section-shop-by-room';
@@ -31,6 +33,7 @@ body {
 a {
   text-decoration: none;
   color: $color-dark-black;
+  transition: color 0.3s;
 
   &:hover {
     text-decoration: none;

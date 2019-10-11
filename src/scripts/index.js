@@ -29,6 +29,27 @@ i18next
     updateContent();
   });
 
+// LANGUAGE SWITCHER
+
+(() => {
+  const languageMenu = document.getElementById('language-menu');
+  languageMenu.addEventListener('click', () => {
+    languageMenu.classList.toggle('language-menu-open');
+  });
+
+  let selectedLanguage;
+  const languageItem = document.querySelectorAll('.language-item');
+
+  languageItem.forEach(item => {
+    item.addEventListener('click', () => {
+      selectedLanguage = item.innerHTML;
+      document.querySelector('.language-item.selected').classList.remove('selected');
+      item.classList.add('selected');
+      document.querySelector('.current-language').innerHTML = selectedLanguage;
+    });
+  });
+})();
+
 initHeroSlider();
 initNewArrivalSlider();
 initShopByRoomSlider();

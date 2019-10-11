@@ -57,5 +57,48 @@
       "title": "Design Studio",
       "description": "Trust to our specialist in your questions"
     }
-  }
+  },
+  "address": "Suvastu Zenim Plaza House # 37, <br />Road # 16 (Old # 27) Dhanmondi R/A, <br />Dhaka-1209",
+
+  "footerMenu": {
+    "company": {
+      "title": "Company",
+      "items": [
+        "About us",
+        "Store Locations",
+        "Services",
+        "Interiors",
+        "News and Press",
+        "Sustainability"
+      ]
+    },
+    "explore": {
+      "title": "Explore",
+      "items": ["Contact us", "Careers", "FAQ", "Adverts & Campaigns", "CO-LLAB"]
+    },
+    "isho": {
+      "title": "ISHO",
+      "items": ["ISHO Events", "ISHO Innovation", "ISHO Rewards"]
+    },
+    "legal": {
+      "title": "Legal",
+      "items": [
+        "Shipping & Delivery",
+        "Order Tracking",
+        "Terms & Conditions",
+        "Returns & Exchanges",
+        "Privacy Policy"
+      ]
+    }
+  },
+  "language": {
+    "title": "Language",
+    "options": {
+      "english": "English",
+      "bengali": "Bengali"
+    }
+  },
+  "copyright": "© 2019 ISHO Limited. Website created by Halo Lab.",
+  "payment": "Payment",
+  "verified": "Verified by"
 }
