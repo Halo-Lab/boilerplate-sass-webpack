@@ -1,0 +1,6 @@
+// Custom variables (overrides Bootstrap variables, should be placed before Bootstrap imports)
+@import './variables';
+// Bootstrap helpers
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';

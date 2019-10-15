@@ -1,0 +1,104 @@
+{
+  "headerInfoOrder": "Get a 1-hour free trial on your order",
+  "findAStoreLink": "Find a Store",
+  "myAccountLink": "My Account",
+  "menu": {
+    "menuItem1": {
+      "menuItemTitle": "products"
+    },
+    "menuItem2": {
+      "menuItemTitle": "buy by room"
+    },
+    "menuItem3": {
+      "menuItemTitle": "satranji project"
+    },
+    "menuItem4": {
+      "menuItemTitle": "inspiration"
+    }
+  },
+  "heroSlider": {
+    "slide1": {
+      "title": "Modern and convenience",
+      "description": "Retro furniture from ৳ 1,000",
+      "button": "shop now"
+    }
+  },
+  "newArrivalTitle": "New arrival",
+  "products": {
+    "bushwickGreenGreyBanco": "Bushwick Green Grey Banco",
+    "bushwickBlueChair": "Bushwick Blue Chair",
+    "bushwickDarkGreySofa": "Bushwick Dark Grey Sofa",
+    "bushwickCenterTable": "Bushwick Center Table"
+  },
+  "viewAllItemsButton": "view all items",
+  "categories": {
+    "bedroom": "Bedroom",
+    "livingRoom": "Living room",
+    "dinningRoom": "Dinning room"
+  },
+  "shopByRoomTitle": "Shop by room",
+  "banners": [
+    "A fusion <br />of form <br />and function",
+    "A fusion of form and function",
+    "A fusion of form and function"
+  ],
+  "bannerLink": "View all",
+  "sectionUsefulTitle": "Let us help you!",
+  "usefulInfo": {
+    "delivery": {
+      "title": "Delivery",
+      "description": "At the right time, in the right place"
+    },
+    "services": {
+      "title": "Services",
+      "description": "Our masters will fix any of your issues"
+    },
+    "design": {
+      "title": "Design Studio",
+      "description": "Trust to our specialist in your questions"
+    }
+  },
+  "address": "Suvastu Zenim Plaza House # 37, <br />Road # 16 (Old # 27) Dhanmondi R/A, <br />Dhaka-1209",
+
+  "footerMenu": {
+    "company": {
+      "title": "Company",
+      "items": [
+        "About us",
+        "Store Locations",
+        "Services",
+        "Interiors",
+        "News and Press",
+        "Sustainability"
+      ]
+    },
+    "explore": {
+      "title": "Explore",
+      "items": ["Contact us", "Careers", "FAQ", "Adverts & Campaigns", "CO-LLAB"]
+    },
+    "isho": {
+      "title": "ISHO",
+      "items": ["ISHO Events", "ISHO Innovation", "ISHO Rewards"]
+    },
+    "legal": {
+      "title": "Legal",
+      "items": [
+        "Shipping & Delivery",
+        "Order Tracking",
+        "Terms & Conditions",
+        "Returns & Exchanges",
+        "Privacy Policy"
+      ]
+    }
+  },
+  "language": {
+    "title": "Language",
+    "options": {
+      "english": "English",
+      "bengali": "Bengali"
+    }
+  },
+  "copyright": "© 2019 ISHO Limited. Website created by Halo Lab.",
+  "payment": "Payment",
+  "verified": "Verified by"
+}

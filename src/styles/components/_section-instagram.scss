@@ -1,0 +1,72 @@
+.section-instagram {
+  position: relative;
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(13, 13, 13, 0.5);
+    opacity: 0.5;
+    z-index: 0;
+  }
+
+  picture {
+    width: 100%;
+    height: auto;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+
+    @include media-breakpoint-down(md) {
+      height: 430px;
+      width: auto;
+    }
+
+    @media only screen and (max-width: 375px) {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .button-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  .button {
+    font-family: $font-title;
+    font-size: 20px;
+    text-transform: none;
+
+    @include media-breakpoint-down(md) {
+      font-size: 18px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 14px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      font-size: 12px;
+    }
+
+    svg {
+      fill: currentColor;
+      width: 1.25em;
+      height: 1.25em;
+      margin-right: 10px;
+    }
+  }
+}

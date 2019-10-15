@@ -1,0 +1,259 @@
+.header {
+  display: flex;
+  justify-content: center;
+  background: $color-white;
+
+  .header__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0px 9px;
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+
+    a,
+    p {
+      font-family: 'AvenirBook', sans-serif;
+      font-size: 12px;
+      line-height: 2.08em;
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .header__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px 28px;
+
+    @include media-breakpoint-down(sm) {
+      padding: 20px 0px 20px;
+    }
+  }
+
+  .menu__wrap {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    width: 100%;
+
+    @media only screen and (max-width: 1150px) {
+      margin-left: 40px;
+    }
+
+    @include media-breakpoint-down(md) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+
+  .header__top-info {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__top-info p {
+    margin-left: 50px;
+  }
+
+  .header__top-links {
+    display: flex;
+    align-items: center;
+  }
+
+  .account-link {
+    margin-left: 40px;
+  }
+
+  .menu__item {
+    font-family: 'AvenirHeavy', sans-serif;
+    font-size: 14px;
+    line-height: 1.78em;
+    text-transform: uppercase;
+
+    @media only screen and (max-width: 1150px) {
+      font-size: 13px;
+    }
+  }
+
+  .menu__item {
+    > a {
+      position: relative;
+
+      @include media-breakpoint-up(lg) {
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 100%;
+          width: 100%;
+          height: 2px;
+          background: currentColor;
+          transform: scaleX(0);
+          transform-origin: left;
+          transition: transform 0.3s;
+        }
+      }
+    }
+  }
+
+  .menu__item > a:hover {
+    color: $body-color;
+
+    @include media-breakpoint-up(lg) {
+      &:after {
+        transform: scaleX(1);
+      }
+    }
+  }
+
+  .menu > .menu__item + .menu__item {
+    margin-left: 40px;
+
+    @media only screen and (max-width: 1150px) {
+      margin-left: 20px;
+    }
+  }
+
+  .header__logo {
+    font-size: 0;
+    width: 100px;
+    flex-shrink: 0;
+
+    @include media-breakpoint-down(sm) {
+      width: 83px;
+    }
+
+    a {
+      display: block;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .menu__item-dropdown {
+    a {
+      position: relative;
+      padding-right: 16px;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 6px;
+        height: 6px;
+        transform: rotate(45deg) translate(-80%, -60%);
+        top: 50%;
+        box-shadow: inset -2px 0 0 0 $color-dark-black, inset 0px -2px 0 0 $color-dark-black;
+      }
+    }
+  }
+
+  .search-field {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px 0 0 $color-dark-black;
+
+    @include media-breakpoint-down(md) {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    input {
+      font-family: 'AvenirLight', sans-serif;
+      border: none;
+      outline: none;
+      width: 178px;
+      font-size: 14px;
+      line-height: 1.78em;
+
+      &::placeholder {
+        color: rgba(#030708, 0.7);
+      }
+    }
+
+    img {
+      padding: 0 5px;
+      margin-right: 8px;
+    }
+  }
+
+  .cart {
+    margin-left: 38px;
+
+    @media only screen and (max-width: 1150px) {
+      margin-left: 20px;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-left: auto;
+    }
+  }
+
+  .hamburger {
+    position: relative;
+    width: 23px;
+    height: 20px;
+    margin-left: 20px;
+    flex-shrink: 0;
+    cursor: pointer;
+
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
+
+    div {
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: black;
+      top: 50%;
+      margin-top: -1px;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 9px 0 0 $color-black;
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 -9px 0 0 $color-black;
+      }
+    }
+  }
+}
