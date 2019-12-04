@@ -1,6 +1,8 @@
 const Webpack = require('webpack');
 const merge = require('webpack-merge');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
+const imageminMozjpeg = require('imagemin-mozjpeg');
 const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
@@ -19,6 +21,10 @@ module.exports = merge(common, {
     new Webpack.optimize.ModuleConcatenationPlugin(),
     new MiniCssExtractPlugin({
       filename: 'bundle.css'
+    }),
+    new ImageminPlugin({
+      pngquant: { quality: [0.5, 0.5] },
+      plugins: [imageminMozjpeg({ quality: 50 })]
     })
   ],
   module: {
@@ -30,11 +36,17 @@ module.exports = merge(common, {
       },
       {
         test: /\.s?css/i,
-        use : [
-          MiniCssExtractPlugin.loader,
-          'css-loader',
-          'sass-loader'
-        ]
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+      },
+      {
+        test: /\.(ico|jpg|jpeg|png|gif|svg)(\?.*)?$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[name]-[sha1:hash:7].[ext]',
+            outputPath: 'images'
+          }
+        }
       }
     ]
   }
