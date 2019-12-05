@@ -1,12 +1,12 @@
 # Webpack Boilertemplate
 
-Базовый шаблон сборки приложения на Webpack.
+Basic template for an application.
 
-## Инструкции
+## Instructions
 
-Руководство по использованию базовых возможностей
+Features guide.
 
-### Оптимизация изображений для различных браузеров и устройств
+### Image optimization for browsers and devices
 
 ```
 <picture>
@@ -16,12 +16,12 @@
 </picture>
 ```
 
-Тег **picture** позволяет выбрать подходящее браузеру изображение из нескольких имеющихся вариантов. Он используется в качестве контейнера для нескольких тегов **source**, в параметрах которых передаётся *условие* и *путь* к изображению. В качестве условия может быть использован:
+A **picture** tag lets you choose the image suitable for the browser from some available options. It's used as a container for several tags **source**, in the parameters of which you should pass *condition* and *path* to the image. As a condition can be used:
 
-* тип данных (type);
-* медиа-запрос (media);
-* размеры (sizes).
+* type
+* media
+* sizes
 
-Тег **source**, удовлетворяющий условию, передаст свои параметры тегу **img**. В том случае, если [браузер не поддерживает picture](https://caniuse.com/#search=picture), тег **img** будет отрисован с исходными параметрами, что обеспечивает поддержку устаревших браузеров.
+The first **source** tag, that satisfied the condition, will pass its parameters to **img** tag. In case if [browser does not support picture tag](https://caniuse.com/#search=picture), **img** will be rendered with initial parameters, which guarantees support for outdated browsers.
 
-[Пример на codepen.io](https://codepen.io/mikhailnetkachev-halolab/pen/NWPqgWL), демонстрирующий использования формата **webp**.
+[Live example on codepen.io](https://codepen.io/mikhailnetkachev-halolab/pen/NWPqgWL).
